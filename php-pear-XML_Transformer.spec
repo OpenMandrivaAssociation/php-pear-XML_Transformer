@@ -8,7 +8,7 @@
 Summary:	%{_pearname} - XML transformations in PHP
 Name:		php-pear-%{_pearname}
 Version:	1.1.0
-Release:	%mkrel 7
+Release:	%mkrel 8
 License:	PHP License
 Group:		Development/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tar.bz2
