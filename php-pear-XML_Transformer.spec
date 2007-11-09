@@ -8,7 +8,7 @@
 Summary:	%{_pearname} - XML transformations in PHP
 Name:		php-pear-%{_pearname}
 Version:	1.1.0
-Release:	%mkrel 8
+Release:	%mkrel 9
 License:	PHP License
 Group:		Development/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tar.bz2
@@ -43,6 +43,8 @@ done
 
 # strip away annoying ^M
 find -type f | grep -v ".gif" | grep -v ".png" | grep -v ".jpg" | xargs dos2unix -U
+
+perl -pi -e "s|PHPUnit2|PHPUnit|g" %{_pearname}-%{version}/Tests/*
 
 %install
 rm -rf %{buildroot}
@@ -85,5 +87,3 @@ rm -rf %{buildroot}
 %{_datadir}/pear/%{_class}/*.php
 %{_datadir}/pear/%{_class}/%{_subclass}
 %{_datadir}/pear/packages/%{_pearname}.xml
-
-
