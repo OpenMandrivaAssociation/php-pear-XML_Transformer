@@ -8,7 +8,7 @@
 Summary:	%{_pearname} - XML transformations in PHP
 Name:		php-pear-%{_pearname}
 Version:	1.1.0
-Release:	%mkrel 10
+Release:	%mkrel 11
 License:	PHP License
 Group:		Development/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tar.bz2
@@ -18,7 +18,7 @@ Requires(preun): php-pear
 Requires:	php-pear
 BuildArch:	noarch
 BuildRequires:	dos2unix
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 With the XML_Transformer class one can easily bind PHP functionality
