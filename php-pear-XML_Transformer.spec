@@ -6,7 +6,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.1.1
-Release:	%mkrel 4
+Release:	%mkrel 5
 Summary:	XML transformations in PHP
 License:	PHP License
 Group:		Development/PHP
